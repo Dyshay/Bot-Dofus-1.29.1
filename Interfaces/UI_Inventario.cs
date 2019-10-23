@@ -91,7 +91,7 @@ namespace Bot_Dofus_1._29._1.Interfaces
             ObjetosInventario objeto = cuenta.juego.personaje.inventario.recursos.ElementAt(e.RowIndex);
             string accion = dataGridView_recursos.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
 
-            if (!int.TryParse(Interaction.InputBox($"Ingresa la cantidad para {accion.ToLower()} el objeto {objeto.nombre} (0 = todos):", accion, "1"), out int cantidad))
+            if (!int.TryParse(Interaction.InputBox($"Choisissez la quantité à {accion.ToLower()} de l'objet {objeto.nombre} (0 = la totalité):", accion, "1"), out int cantidad))
                 return;
 
             switch (accion)
