@@ -105,12 +105,12 @@ namespace Bot_Dofus_1._29._1.Comun.Frames.Juego
 
                                     pelea.get_Agregar_Luchador(new Luchadores(id, true, vida, pa, pm, celda, vida, equipo));
 
-                                    if (cuenta.juego.personaje.id == id && cuenta.pelea_extension.configuracion.posicionamiento != PosicionamientoInicioPelea.INMOVIL)
+                                    if (cuenta.juego.personaje.id == id && cuenta.pelea_extension.configuracion.posicionamiento != PosicionamientoInicioPelea.IMMOBILE)
                                     {
                                         await Task.Delay(300);
 
                                         /** la posicion es aleatoria pero el paquete GP siempre aparecera primero el team donde esta el pj **/
-                                        short celda_posicion = pelea.get_Celda_Mas_Cercana_O_Lejana(cuenta.pelea_extension.configuracion.posicionamiento == PosicionamientoInicioPelea.CERCA_DE_ENEMIGOS, pelea.celdas_preparacion);
+                                        short celda_posicion = pelea.get_Celda_Mas_Cercana_O_Lejana(cuenta.pelea_extension.configuracion.posicionamiento == PosicionamientoInicioPelea.PROCHE_DES_ENNEMIS, pelea.celdas_preparacion);
 
                                         if (celda_posicion != celda.id)
                                             cuenta.conexion.enviar_Paquete("Gp" + celda_posicion, true);

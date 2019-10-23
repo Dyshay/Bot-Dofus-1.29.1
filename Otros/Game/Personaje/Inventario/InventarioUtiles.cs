@@ -8,67 +8,67 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Personaje.Inventario
         private static Dictionary<int, List<InventarioPosiciones>> possibles_posiciones = new Dictionary<int, List<InventarioPosiciones>>
         {
             { 1,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.AMULETO } },
+            { InventarioPosiciones.AMULETTE } },
 
             { 2,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
 
             { 3,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
 
             { 4,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
 
             { 5,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
 
             { 6,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
 
             { 7,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
 
             { 8,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
 
             { 9,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.ANILLO_IZQUIERDA, InventarioPosiciones.ANILLO_DERECHA } },
+            { InventarioPosiciones.ANNEAU_GAUCHE, InventarioPosiciones.ANNEAU_DROITE } },
 
             { 10,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.CINTURON } },
+            { InventarioPosiciones.CEINTURE } },
 
             { 11,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.BOTAS } },
+            { InventarioPosiciones.BOTTES } },
 
             { 16,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.SOMBRERO } },
+            { InventarioPosiciones.CHAPEAU } },
 
             { 17,  new List<InventarioPosiciones>()
-            { InventarioPosiciones.CAPA } },
+            { InventarioPosiciones.CAPE } },
 
             { 18, new List<InventarioPosiciones>()
-            { InventarioPosiciones.MASCOTA } },
+            { InventarioPosiciones.FAMILLIER } },
 
             { 19, new List<InventarioPosiciones>()//hacha
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
 
             { 20, new List<InventarioPosiciones>()//herramienta
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
 
             { 21, new List<InventarioPosiciones>()//pico
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
 
             { 22, new List<InventarioPosiciones>()//Guadaña
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
 
             { 23, new List<InventarioPosiciones>()
             { InventarioPosiciones.DOFUS1, InventarioPosiciones.DOFUS2, InventarioPosiciones.DOFUS3, InventarioPosiciones.DOFUS4, InventarioPosiciones.DOFUS5, InventarioPosiciones.DOFUS6 } },
 
             { 82, new List<InventarioPosiciones>()
-            { InventarioPosiciones.ESCUDO } },
+            { InventarioPosiciones.BOUCLIER } },
 
             { 83, new List<InventarioPosiciones>()//piedra de alma
-            { InventarioPosiciones.ARMA } },
+            { InventarioPosiciones.ARME } },
         };
 
         public static List<InventarioPosiciones> get_Posibles_Posiciones(int tipo_objeto) => possibles_posiciones.ContainsKey(tipo_objeto) ? possibles_posiciones[tipo_objeto] : null;

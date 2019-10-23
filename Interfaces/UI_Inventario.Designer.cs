@@ -189,7 +189,7 @@
             // eliminar_equipamiento
             // 
             this.eliminar_equipamiento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.eliminar_equipamiento.HeaderText = "Supprimé";
+            this.eliminar_equipamiento.HeaderText = "Supprimer";
             this.eliminar_equipamiento.MinimumWidth = 100;
             this.eliminar_equipamiento.Name = "eliminar_equipamiento";
             this.eliminar_equipamiento.ReadOnly = true;
@@ -244,7 +244,7 @@
             // id_modelo_varios
             // 
             this.id_modelo_varios.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.id_modelo_varios.HeaderText = "ID Modelo";
+            this.id_modelo_varios.HeaderText = "ID Model";
             this.id_modelo_varios.MinimumWidth = 100;
             this.id_modelo_varios.Name = "id_modelo_varios";
             this.id_modelo_varios.ReadOnly = true;
@@ -274,7 +274,7 @@
             // eliminar_varios
             // 
             this.eliminar_varios.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.eliminar_varios.HeaderText = "Supprimé";
+            this.eliminar_varios.HeaderText = "Supprimer";
             this.eliminar_varios.MinimumWidth = 100;
             this.eliminar_varios.Name = "eliminar_varios";
             this.eliminar_varios.ReadOnly = true;
@@ -288,7 +288,7 @@
             this.tabPage_recursos.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage_recursos.Size = new System.Drawing.Size(782, 466);
             this.tabPage_recursos.TabIndex = 2;
-            this.tabPage_recursos.Text = "Recursos";
+            this.tabPage_recursos.Text = "Ressources";
             this.tabPage_recursos.UseVisualStyleBackColor = true;
             // 
             // dataGridView_recursos
@@ -360,7 +360,7 @@
             // eliminar_recursos
             // 
             this.eliminar_recursos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.eliminar_recursos.HeaderText = "Supprimé";
+            this.eliminar_recursos.HeaderText = "Supprimer";
             this.eliminar_recursos.MinimumWidth = 100;
             this.eliminar_recursos.Name = "eliminar_recursos";
             this.eliminar_recursos.ReadOnly = true;
@@ -374,7 +374,7 @@
             this.tabPage_mision.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage_mision.Size = new System.Drawing.Size(782, 466);
             this.tabPage_mision.TabIndex = 3;
-            this.tabPage_mision.Text = "Objetos de misión";
+            this.tabPage_mision.Text = "Objet de quête";
             this.tabPage_mision.UseVisualStyleBackColor = true;
             // 
             // imageList1
@@ -413,7 +413,7 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID Inventario";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID Inventaire";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 110;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;

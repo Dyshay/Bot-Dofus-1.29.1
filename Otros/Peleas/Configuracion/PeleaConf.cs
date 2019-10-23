@@ -74,7 +74,7 @@ namespace Bot_Dofus_1._29._1.Otros.Peleas.Configuracion
             desactivar_espectador = false;
             utilizar_dragopavo = false;
             tactica = Tactica.AGRESIVA;
-            posicionamiento = PosicionamientoInicioPelea.CERCA_DE_ENEMIGOS;
+            posicionamiento = PosicionamientoInicioPelea.PROCHE_DES_ENNEMIS;
             iniciar_regeneracion = 50;
             detener_regeneracion = 100;
         }

@@ -98,7 +98,7 @@ namespace Bot_Dofus_1._29._1.Interfaces
             this.desconectarOconectarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("desconectarOconectarToolStripMenuItem.Image")));
             this.desconectarOconectarToolStripMenuItem.Name = "desconectarOconectarToolStripMenuItem";
             this.desconectarOconectarToolStripMenuItem.Size = new System.Drawing.Size(120, 24);
-            this.desconectarOconectarToolStripMenuItem.Text = "Deconnecté";
+            this.desconectarOconectarToolStripMenuItem.Text = "Déconnexion";
             this.desconectarOconectarToolStripMenuItem.Click += new System.EventHandler(this.desconectarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
@@ -106,7 +106,7 @@ namespace Bot_Dofus_1._29._1.Interfaces
             this.eliminarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarToolStripMenuItem.Image")));
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
-            this.eliminarToolStripMenuItem.Text = "Retiré";
+            this.eliminarToolStripMenuItem.Text = "Retirer";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // ScriptTituloStripMenuItem

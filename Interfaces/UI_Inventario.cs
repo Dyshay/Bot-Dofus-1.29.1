@@ -39,15 +39,15 @@ namespace Bot_Dofus_1._29._1.Interfaces
                 {
                     dataGridView_equipamientos.Rows.Clear();
                     foreach (ObjetosInventario obj in cuenta.juego.personaje.inventario.equipamiento)
-                        dataGridView_equipamientos.Rows.Add(new object[] { obj.id_inventario, obj.id_modelo, obj.nombre, obj.cantidad, obj.posicion, obj.posicion == InventarioPosiciones.NO_EQUIPADO ? "Equipar" : "Desequipar", "Eliminar" });
+                        dataGridView_equipamientos.Rows.Add(new object[] { obj.id_inventario, obj.id_modelo, obj.nombre, obj.cantidad, obj.posicion, obj.posicion == InventarioPosiciones.NON_ÉQUIPÉ ? "Équiper" : "Déséquiper", "Supprimer" });
 
                     dataGridView_varios.Rows.Clear();
                     foreach (ObjetosInventario obj in cuenta.juego.personaje.inventario.varios)
-                        dataGridView_varios.Rows.Add(new object[] { obj.id_inventario, obj.id_modelo, obj.nombre, obj.cantidad, obj.pods, "Eliminar" });
+                        dataGridView_varios.Rows.Add(new object[] { obj.id_inventario, obj.id_modelo, obj.nombre, obj.cantidad, obj.pods, "Supprimer" });
 
                     dataGridView_recursos.Rows.Clear();
                     foreach (ObjetosInventario obj in cuenta.juego.personaje.inventario.recursos)
-                        dataGridView_recursos.Rows.Add(new object[6] { obj.id_inventario, obj.id_modelo, obj.nombre, obj.cantidad, obj.pods, "Eliminar" });
+                        dataGridView_recursos.Rows.Add(new object[6] { obj.id_inventario, obj.id_modelo, obj.nombre, obj.cantidad, obj.pods, "Supprimer" });
 
                     dataGridView_mision.Rows.Clear();
                     foreach (ObjetosInventario obj in cuenta.juego.personaje.inventario.mision)
@@ -68,15 +68,15 @@ namespace Bot_Dofus_1._29._1.Interfaces
 
             switch (accion)
             {
-                case "Equipar":
+                case "Équiper":
                     cuenta.juego.personaje.inventario.equipar_Objeto(objeto);
                 break;
 
-                case "Desequipar":
+                case "Déséquiper":
                     cuenta.juego.personaje.inventario.desequipar_Objeto(objeto);
                 break;
 
-                case "Eliminar":
+                case "Supprimer":
                     if (MessageBox.Show("Realmente deseas eliminar " + objeto.nombre + "?", "Eliminar un objeto", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         cuenta.juego.personaje.inventario.eliminar_Objeto(objeto, 1, true);
                 break;
@@ -96,7 +96,7 @@ namespace Bot_Dofus_1._29._1.Interfaces
 
             switch (accion)
             {
-                case "Eliminar":
+                case "Supprimer":
                     cuenta.juego.personaje.inventario.eliminar_Objeto(objeto, cantidad, true);
                 break;
             }

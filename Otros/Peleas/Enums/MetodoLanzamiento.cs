@@ -3,7 +3,7 @@
     public enum MetodoLanzamiento
     {
         CAC,
-        ALEJADO,
-        AMBOS
+        ÉLOIGNÉ,
+        LES_DEUX
     }
 }

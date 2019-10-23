@@ -48,7 +48,7 @@ namespace Bot_Dofus_1._29._1.Otros.Scripts.Api
         {
             ObjetosInventario objeto = cuenta.juego.personaje.inventario.get_Objeto_Modelo_Id(modelo_id);
 
-            if (objeto == null || objeto.posicion != InventarioPosiciones.NO_EQUIPADO)
+            if (objeto == null || objeto.posicion != InventarioPosiciones.NON_ÉQUIPÉ)
                 return false;
 
             manejar_acciones.enqueue_Accion(new EquiparItemAccion(modelo_id), true);

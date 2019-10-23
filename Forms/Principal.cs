@@ -43,7 +43,7 @@ namespace Bot_Dofus_1._29._1.Forms
                     if (cuentas_para_cargar.Count < 2)
                     {
                         CuentaConf cuenta_conf = cuentas_para_cargar[0];
-                        cuentas_cargadas.Add(cuenta_conf.nombre_cuenta, agregar_Nueva_Tab_Pagina(cuenta_conf.nombre_cuenta, new UI_Principal(new Cuenta(cuenta_conf)), "Ninguno"));
+                        cuentas_cargadas.Add(cuenta_conf.nombre_cuenta, agregar_Nueva_Tab_Pagina(cuenta_conf.nombre_cuenta, new UI_Principal(new Cuenta(cuenta_conf)), "Aucun"));
                     }
                     else
                     {

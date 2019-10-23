@@ -96,7 +96,7 @@ namespace Bot_Dofus_1._29._1.Interfaces
             this.checkBox_mostrar_celdas.Name = "checkBox_mostrar_celdas";
             this.checkBox_mostrar_celdas.Size = new System.Drawing.Size(195, 30);
             this.checkBox_mostrar_celdas.TabIndex = 1;
-            this.checkBox_mostrar_celdas.Text = "Montré les cellules";
+            this.checkBox_mostrar_celdas.Text = "Montrer les cellules";
             this.checkBox_mostrar_celdas.UseVisualStyleBackColor = true;
             this.checkBox_mostrar_celdas.CheckedChanged += new System.EventHandler(this.checkBox_mostrar_celdas_CheckedChanged);
             // 
@@ -110,7 +110,7 @@ namespace Bot_Dofus_1._29._1.Interfaces
             this.checkBox_animaciones.Name = "checkBox_animaciones";
             this.checkBox_animaciones.Size = new System.Drawing.Size(195, 30);
             this.checkBox_animaciones.TabIndex = 2;
-            this.checkBox_animaciones.Text = "Montré les animations";
+            this.checkBox_animaciones.Text = "Montrer les animations";
             this.checkBox_animaciones.UseVisualStyleBackColor = true;
             this.checkBox_animaciones.CheckedChanged += new System.EventHandler(this.checkBox_animaciones_CheckedChanged);
             // 

@@ -119,7 +119,7 @@
             this.button_limpiar_logs_debugger.Name = "button_limpiar_logs_debugger";
             this.button_limpiar_logs_debugger.Size = new System.Drawing.Size(244, 34);
             this.button_limpiar_logs_debugger.TabIndex = 1;
-            this.button_limpiar_logs_debugger.Text = "Nettoyé";
+            this.button_limpiar_logs_debugger.Text = "Nettoyer";
             this.button_limpiar_logs_debugger.UseVisualStyleBackColor = true;
             this.button_limpiar_logs_debugger.Click += new System.EventHandler(this.button_limpiar_logs_debugger_Click);
             // 

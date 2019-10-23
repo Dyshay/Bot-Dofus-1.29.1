@@ -456,7 +456,7 @@
             this.tabPage_hechizos_pelea.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage_hechizos_pelea.Size = new System.Drawing.Size(742, 546);
             this.tabPage_hechizos_pelea.TabIndex = 1;
-            this.tabPage_hechizos_pelea.Text = "Hechizos";
+            this.tabPage_hechizos_pelea.Text = "Sorts";
             this.tabPage_hechizos_pelea.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel6
@@ -662,7 +662,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(317, 32);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Envoûtement:";
+            this.label5.Text = "Sort:";
             // 
             // comboBox_lista_hechizos
             // 

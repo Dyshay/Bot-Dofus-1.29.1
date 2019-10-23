@@ -2,8 +2,8 @@
 {
     public enum PosicionamientoInicioPelea
     {
-        LEJOS_DE_ENEMIGOS = 0,
-        CERCA_DE_ENEMIGOS = 1,
-        INMOVIL = 2
+        LOIN_DES_ENNEMIS = 0,
+        PROCHE_DES_ENNEMIS = 1,
+        IMMOBILE = 2
     }
 }

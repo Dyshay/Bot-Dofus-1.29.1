@@ -124,7 +124,7 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Personaje.Inventario
                 return false;
             }
 
-            if (objeto.posicion != InventarioPosiciones.NO_EQUIPADO)//objeto ya esta equipado
+            if (objeto.posicion != InventarioPosiciones.NON_ÉQUIPÉ)//objeto ya esta equipado
             {
                 cuenta.logger.log_Error("INVENTAIRE", $"l'objet {objeto.nombre} est équipé");
                 return false;
@@ -153,8 +153,8 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Personaje.Inventario
             //desequipa X objeto si ya esta equipado
             if (_objetos.TryGetValue(get_Objeto_en_Posicion(possibles_posiciones[0]).id_inventario, out ObjetosInventario objeto_equipado))
             {
-                objeto_equipado.posicion = InventarioPosiciones.NO_EQUIPADO;
-                cuenta.conexion.enviar_Paquete("OM" + objeto_equipado.id_inventario + "|" + (sbyte)InventarioPosiciones.NO_EQUIPADO);
+                objeto_equipado.posicion = InventarioPosiciones.NON_ÉQUIPÉ;
+                cuenta.conexion.enviar_Paquete("OM" + objeto_equipado.id_inventario + "|" + (sbyte)InventarioPosiciones.NON_ÉQUIPÉ);
             }
 
             cuenta.conexion.enviar_Paquete("OM" + objeto.id_inventario + "|" + (sbyte)possibles_posiciones[0]);
@@ -172,11 +172,11 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Personaje.Inventario
             if (objeto == null)
                 return false;
 
-            if (objeto.posicion == InventarioPosiciones.NO_EQUIPADO)
+            if (objeto.posicion == InventarioPosiciones.NON_ÉQUIPÉ)
                 return false;
 
-            cuenta.conexion.enviar_Paquete("OM" + objeto.id_inventario + "|" + (sbyte)InventarioPosiciones.NO_EQUIPADO);
-            objeto.posicion = InventarioPosiciones.NO_EQUIPADO;
+            cuenta.conexion.enviar_Paquete("OM" + objeto.id_inventario + "|" + (sbyte)InventarioPosiciones.NON_ÉQUIPÉ);
+            objeto.posicion = InventarioPosiciones.NON_ÉQUIPÉ;
             cuenta.logger.log_informacion("INVENTAIRE", $"{objeto.nombre} déséquipé.");
             inventario_actualizado?.Invoke(true);
             return true;

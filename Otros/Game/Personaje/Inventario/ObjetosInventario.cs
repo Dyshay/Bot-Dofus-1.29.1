@@ -19,7 +19,7 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Personaje.Inventario
         public int id_modelo { get; private set; }
         public string nombre { get; private set; } = "Inconnu";
         public int cantidad { get; set; }
-        public InventarioPosiciones posicion { get; set; } = InventarioPosiciones.NO_EQUIPADO;
+        public InventarioPosiciones posicion { get; set; } = InventarioPosiciones.NON_ÉQUIPÉ;
         public short pods { get; private set; }
         public short nivel { get; private set; } = 0;
         public byte tipo { get; private set; }
@@ -66,6 +66,6 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Personaje.Inventario
             }
         }
 
-        public bool objeto_esta_equipado() => posicion > InventarioPosiciones.NO_EQUIPADO;
+        public bool objeto_esta_equipado() => posicion > InventarioPosiciones.NON_ÉQUIPÉ;
     }
 }

@@ -2,9 +2,9 @@
 {
     public enum HechizoFocus
     {
-        ENEMIGO = 0,
-        ALIADO = 1,
-        ENCIMA = 2,
-        CELDA_VACIA = 3
+        ENNEMI = 0,
+        ALLIÉ = 1,
+        SOIMEME = 2,
+        CELLULE_VIDE = 3
     }
 }

@@ -379,7 +379,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 40);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Puntos de vida";
+            this.label1.Text = "Points de vie";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button3
