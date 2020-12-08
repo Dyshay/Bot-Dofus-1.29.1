@@ -25,7 +25,8 @@ namespace Bot_Dofus_1._29._1.Comun.Frames.LoginCuenta
 
             account.AccountState = AccountStates.CONNECTED;
             account.welcomeKey = prmPacket.Substring(2);
-            prmClient.SendPacket("1.32.1");
+
+            prmClient.SendPacket("1.33.6");
             prmClient.SendPacket(prmClient.account.accountConfig.accountUsername + "\n" + Hash.Crypt_Password(prmClient.account.accountConfig.accountPassword, prmClient.account.welcomeKey));
             prmClient.SendPacket("Af");
         }
