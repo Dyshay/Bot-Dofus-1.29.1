@@ -100,12 +100,12 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Character.Inventory
 
                 case 12:
                 case 13:
+                case 33:
                 case 85:
                 case 86:
                     return InventoryObjectsTypes.MISCELLANEOUS;
 
                 case 15:
-                case 33:
                 case 34:
                 case 35:
                 case 36:
@@ -124,6 +124,7 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Character.Inventory
                 case 58:
                 case 59:
                 case 60:
+                case 63:
                 case 65:
                 case 68:
                 case 84:

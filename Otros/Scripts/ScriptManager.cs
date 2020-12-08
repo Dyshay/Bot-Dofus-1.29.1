@@ -263,7 +263,7 @@ namespace Bot_Dofus_1._29._1.Otros.Scripts
         {
             if (account.game.character.caracteristicas.energia_actual == 0)
             {
-                account.Logger.LogInfo("SCRIPT", "Le personnage est mort, passage en mode fenix.");
+                account.Logger.LogInfo("SCRIPT", "Le personnage est mort, passage en mode phénix.");
                 script_state = ScriptState.PHENIX;
             }
             await Task.Delay(50);
