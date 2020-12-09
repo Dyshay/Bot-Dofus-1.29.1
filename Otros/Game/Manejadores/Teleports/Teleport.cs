@@ -16,7 +16,7 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Entidades.Manejadores.Teleports
         private Pathfinder pathfinder;
 
         private int cell_Id;
-        private int map_Id;
+        private string map_Id;
         private bool disposed;
 
 
@@ -30,12 +30,11 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Entidades.Manejadores.Teleports
             mapa.mapRefreshEvent += evento_Mapa_Actualizado;
         }
 
-        public bool get_teleport(int _cell_Id, int _map_Id)
+        public bool get_teleport(string _map_Id)
         {
             if (cuenta.Is_Busy())
                 return false;
 
-            this.cell_Id = _cell_Id;
             this.map_Id = _map_Id;
 
             foreach (KeyValuePair<short, ObjetoInteractivo> kvp in get_Interactivos_Utilizables())
@@ -68,7 +67,11 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Entidades.Manejadores.Teleports
                 foreach (short habilidad in interactivo.modelo.habilidades)
                 {
                     if(habilidad==157)
+                    {
                         elementos_utilizables.Add(interactivo.celda.cellId, interactivo);
+                        this.cell_Id = interactivo.celda.cellId;
+                        return elementos_utilizables;
+                    }
                 }
             }
 

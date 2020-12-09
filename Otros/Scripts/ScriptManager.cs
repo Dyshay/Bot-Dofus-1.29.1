@@ -263,7 +263,7 @@ namespace Bot_Dofus_1._29._1.Otros.Scripts
         {
             if (account.game.character.caracteristicas.energia_actual == 0)
             {
-                account.Logger.LogInfo("SCRIPT", "Le personnage est mort, passage en mode fenix.");
+                account.Logger.LogInfo("SCRIPT", "Le personnage est mort, passage en mode phénix.");
                 script_state = ScriptState.PHENIX;
             }
             await Task.Delay(50);
@@ -362,6 +362,10 @@ namespace Bot_Dofus_1._29._1.Otros.Scripts
             if (!bandera.IsNil() && bandera.Type == DataType.String)
                 banderas.Add(new CambiarMapa(bandera.String));
 
+            bandera = valor.Get("zaapi");
+            if (!bandera.IsNil() && bandera.Type == DataType.String)
+                banderas.Add(new CambiarTeleport(bandera.String));
+
             bandera = valor.Get("direction");
             if (!bandera.IsNil() && bandera.Type == DataType.String)
             {
@@ -406,6 +410,10 @@ namespace Bot_Dofus_1._29._1.Otros.Scripts
 
                 case CambiarMapa mapa:
                     manejar_Cambio_Mapa(mapa);
+                    break;
+
+                case CambiarTeleport _TeleportDetails:
+                    manejar_Teleport(_TeleportDetails);
                     break;
             }
         }
@@ -486,6 +494,11 @@ namespace Bot_Dofus_1._29._1.Otros.Scripts
                 actions_manager.enqueue_Accion(accion, true);
             else
                 detener_Script("La cellule n'est pas valide pour changer de map");
+        }
+
+        private void manejar_Teleport(CambiarTeleport TeleportDetails)
+        {
+            actions_manager.enqueue_Accion(new TeleportAccion(TeleportDetails.map_Id), true);
         }
 
         private async Task verifyBags()
