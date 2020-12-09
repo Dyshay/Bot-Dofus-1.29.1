@@ -38,7 +38,7 @@ namespace Bot_Dofus_1._29._1.Comun.Network
 
         public TcpClient(Account prmAccount) => account = prmAccount;
 
-        public void ConnectToServer(IPAddress[] ip, int port)
+        public void ConnectToServer(IPAddress ip, int port)
         {
             try
             {
