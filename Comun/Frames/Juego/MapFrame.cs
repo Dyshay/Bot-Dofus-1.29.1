@@ -350,12 +350,20 @@ namespace Bot_Dofus_1._29._1.Comun.Frames.Juego
 
                     case 3:
                         if (cuenta.game.map.interactives.TryGetValue(celda_id, out var value))
-                            value.es_utilizable = false;
+                        {
+                            if(value.modelo.habilidades[0]==157)
+                                cuenta.game.manager.teleport.evento_Teleport_Iniciada();
+                            else
+                            {
+                                value.es_utilizable = false;
 
-                        if (cuenta.IsGathering())
-                            cuenta.game.manager.recoleccion.evento_Recoleccion_Acabada(RecoleccionResultado.RECOLECTADO, celda_id);
-                        else
-                            cuenta.game.manager.recoleccion.evento_Recoleccion_Acabada(RecoleccionResultado.ROBADO, celda_id);
+                                if (cuenta.IsGathering())
+                                    cuenta.game.manager.recoleccion.evento_Recoleccion_Acabada(RecoleccionResultado.RECOLECTADO, celda_id);
+                                else
+                                    cuenta.game.manager.recoleccion.evento_Recoleccion_Acabada(RecoleccionResultado.ROBADO, celda_id);
+                            }
+                        }
+
                         break;
 
                     case 4:// reaparece asi se fuerza el cambio de mapa 
